@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tai lieu</title>
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<style type="text/css">
+		body {
+			/*background: #074956;*/
+		}
+
+		.list-group {
+			width: 400px !important
+		}
+
+		.list-group-item {
+			margin-top: 10px;
+			border-radius: 10px;
+			/* background: linear-gradient(to right, #1d87b9 0%, #61d0e0 100%); */
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+			box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+
+
+
+		}
+
+		.linux {
+			background: linear-gradient(to right, #1d87b9 20%, #61d0e0 80%);
+		}
+
+		.git {
+			background: linear-gradient(to right, #0e9c4e 20%, #28f1a4 80%);
+		}
+
+		.docker {
+			background: linear-gradient(to right, #829c0e 20%, #d3f128 80%);
+		}
+
+		.api {
+			background: linear-gradient(to right, #9c0e79 20%, #dd80e0 80%);
+		}
+
+		.laravel {
+			background: linear-gradient(to right, #9c360e 20%, #f19a28 80%);
+		}
+
+		.php {
+			background: linear-gradient(to right, #ec6645 0%, #3fbaeb 100%);
+		}
+
+		.js {
+			background: linear-gradient(to right, #825cec 0%, #e66590 100%);
+		}
+
+		.react {
+			background: linear-gradient(to right, #0e879c 0%, #28f15a 100%);
+		}
+
+		.list-group-item:hover {
+			transform: scaleX(1.1)
+		}
+
+		.check {
+			opacity: 0;
+			transition: all 0.6s ease-in-out
+		}
+
+		.list-group-item:hover .check {
+			opacity: 1
+		}
+
+		.about strong {
+			font-size: 12px;
+			margin-right: 10px
+		}
+
+		.cat {
+			color: white;
+		}
+
+		.brace1 {
+			width: 50px;
+			height: 80px;
+		}
+
+		.brace2 {
+			width: 50px;
+			height: 30px;
+		}
+
+		.brace3 {
+			width: 50px;
+			height: 215px;
+		}
+
+		.brace4 {
+			width: 50px;
+			height: 150px;
+		}
+
+		.brace5 {
+			width: 50px;
+			height: 70px;
+		}
+
+		.brace6 {
+			width: 50px;
+			height: 60px;
+		}
+
+		.brace7 {
+			width: 50px;
+			height: 110px;
+		}
+
+		.brace_part1 {
+			border-left: 2px solid black;
+			border-top-left-radius: 12px;
+			margin-left: 48px;
+		}
+
+		.brace_part2 {
+			border-right: 2px solid black;
+			border-bottom-right-radius: 12px;
+		}
+
+		.brace_part3 {
+			border-right: 2px solid black;
+			border-top-right-radius: 12px;
+		}
+
+		.brace_part4 {
+			border-left: 2px solid black;
+			border-bottom-left-radius: 12px;
+			margin-left: 48px;
+		}
+
+		.brace_part5 {
+			border-right: 2px solid black;
+			border-top-right-radius: 12px;
+			margin-right: 48px;
+		}
+
+		.brace_part6 {
+			border-left: 2px solid black;
+			border-bottom-left-radius: 12px;
+			margin-left: 48px;
+		}
+
+		.brace_part7 {
+			border-left: 2px solid black;
+			border-top-left-radius: 12px;
+			margin-left: 48px;
+		}
+
+		.brace_part8 {
+			border-right: 2px solid black;
+			border-bottom-right-radius: 12px;
+			margin-right: 48px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container d-flex justify-content-center">
+		<h1>DEHA DOCUMENT</h1>
+	</div>
+
+	
+
+
+	<div class="container d-flex justify-content-center" style="position: relative;">
+		<!-- <a href="https://drive.google.com/file/d/1biFNqi4-1a54RHODOae85Mimyh6GTyc8/view">Coding Conventions và các chuẩn viết code trong PHP</a> -->
+
+		<div style="position: absolute; top: 215px; left: 160px;"><strong style="font-size: 30px;">LINUX</strong></div>
+		<div style="position: absolute; top: 76px; left: 246px;">
+			<div class="brace1 brace_part1"></div>
+			<div class="brace1 brace_part2"></div>
+			<div class="brace1 brace_part3"></div>
+			<div class="brace1 brace_part4"></div>
+		</div>
+
+		<div style="position: absolute; top: 883px; left: 145px;"><strong style="font-size: 30px;">DOCKER</strong></div>
+		<div style="position: absolute; top: 850px; left: 246px;">
+			<div class="brace2 brace_part1"></div>
+			<div class="brace2 brace_part2"></div>
+			<div class="brace2 brace_part3"></div>
+			<div class="brace2 brace_part4"></div>
+		</div>
+
+		<div style="position: absolute; top:1740px; left: 130px;"><strong style="font-size: 30px;">REACT JS</strong></div>
+		<div style="position: absolute; top: 1335px; left: 246px;">
+			<div class="brace3 brace_part1"></div>
+			<div class="brace3 brace_part2"></div>
+			<div class="brace3 brace_part3"></div>
+			<div class="brace3 brace_part4"></div>
+		</div>
+
+		<div style="position: absolute; top:2798px; left: 130px;"><strong style="font-size: 30px;">LARAVEL</strong></div>
+		<div style="position: absolute; top: 2520px; left: 246px;">
+			<div class="brace4 brace_part1"></div>
+			<div class="brace4 brace_part2"></div>
+			<div class="brace4 brace_part3"></div>
+			<div class="brace4 brace_part4"></div>
+		</div>
+
+		<div style="position: absolute; top: 610px; right: 200px;"><strong style="font-size: 30px;">GIT</strong></div>
+		<div style="position: absolute; top: 470px; right: 246px;">
+			<div class="brace1 brace_part5"></div>
+			<div class="brace1 brace_part6"></div>
+			<div class="brace1 brace_part7"></div>
+			<div class="brace1 brace_part8"></div>
+		</div>
+
+		<div style="position: absolute; top: 1140px; right: 90px;"><strong style="font-size: 30px;">JAVASCRIPT</strong></div>
+		<div style="position: absolute; top: 1020px; right: 246px;">
+			<div class="brace5 brace_part5"></div>
+			<div class="brace5 brace_part6"></div>
+			<div class="brace5 brace_part7"></div>
+			<div class="brace5 brace_part8"></div>
+		</div>
+
+		<div style="position: absolute; top: 2338px; right: 190px;"><strong style="font-size: 30px;">PHP</strong></div>
+		<div style="position: absolute; top: 2240px; right: 246px;">
+			<div class="brace6 brace_part5"></div>
+			<div class="brace6 brace_part6"></div>
+			<div class="brace6 brace_part7"></div>
+			<div class="brace6 brace_part8"></div>
+		</div>
+
+		<div style="position: absolute; top: 3345px; right: 80px;"><strong style="font-size: 30px;">RESTFUL API</strong></div>
+		<div style="position: absolute; top: 3149px; right: 246px;">
+			<div class="brace7 brace_part5"></div>
+			<div class="brace7 brace_part6"></div>
+			<div class="brace7 brace_part7"></div>
+			<div class="brace7 brace_part8"></div>
+		</div>
+
+		
+
+		<ul class="list-group mt-5 text-white">
+			<!-- start linux -->
+			<li onclick="window.location.href = 'https://quantrimang.com/cau-truc-cay-thu-muc-trong-linux-84056'"
+				class="list-group-item linux d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Cấu trúc cây thư mục, file hệ thống Linux</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">Linux</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://viblo.asia/p/cau-truc-thu-muc-va-phan-quyen-trong-ubuntu-jvElaGpAKkw'"
+				class="list-group-item linux d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Phân quyền</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">Linux</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://www.hostinger.vn/huong-dan/cac-lenh-co-ban-trong-linux'"
+				class="list-group-item linux d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Câu lệnh linux cơ bản</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">Linux</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://huongdan.azdigi.com/huong-dan-su-dung-vi-editor-usage/'"
+				class="list-group-item linux d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Hướng dẫn sử dụng vi trên Linux</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">Linux</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://gitlab.com/erkhuy/ubutu-setup'"
+				class="list-group-item linux d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Package nên cài cho Linux</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">Linux</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<!-- end linux -->
+
+			<!-- start GIT -->
+			<li style="margin-top: 50px;"
+				onclick="window.location.href = 'https://drive.google.com/file/d/1zAyJUPFCVgDZdipFQhJOT83icOsqXytV/view'"
+				class="list-group-item git d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Câu hỏi về Git</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">GIT</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://gbaydev.com/git-la-gi-tai-sao-phai-dung-git/#Branch'"
+				class="list-group-item git d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Git cơ bản</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">GIT</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://www.git-tower.com/learn/git/faq/solve-merge-conflicts'"
+				class="list-group-item git d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Cách fix merge conflicts 1</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">GIT</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://phoenixnap.com/kb/how-to-resolve-merge-conflicts-in-git'"
+				class="list-group-item git d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Cách fix merge conflicts 2</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">GIT</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://nvie.com/posts/a-successful-git-branching-model/'"
+				class="list-group-item git d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">A successful Git branching model</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">GIT</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<!-- end GIT -->
+
+
+			<!-- start Docker -->
+			<li style="margin-top: 50px;"
+				onclick="window.location.href = 'https://drive.google.com/file/d/1_dr8X_U4nTENB8pDK_qp52aXAnKGDt1b/view'"
+				class="list-group-item docker d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Các câu lệnh cơ bản trong Docker</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">DOCKER</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://www.youtube.com/watch?v=3c-iBn73dDE'"
+				class="list-group-item docker d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Docker Course (Video youtube Tiếng Anh)</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">DOCKER</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<!-- end Docker -->
+
+			<!-- start JS -->
+
+			<li style="margin-top: 50px;" onclick="window.location.href = 'https://gitlab.com/erkhuy/tech-laravel-react/-/blob/main/MODULE_JAVASCRIPT_EXAMPLE.md'"
+				class="list-group-item js d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Module trong JS</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">JAVASCRIPT</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://github.com/airbnb/javascript'"
+				class="list-group-item js d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Coding Convention trong JS</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">JAVASCRIPT</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://github.com/ryanmcdermott/clean-code-javascript'"
+				class="list-group-item js d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">ryanmcdermott/clean-code-javascript</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">JAVASCRIPT</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li 
+				onclick="window.location.href = 'http://gregfranko.com/jquery-best-practices/#/'"
+				class="list-group-item js d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Jquery Best Practice</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">JAVASCRIPT</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<!-- end JS -->
+
+			<!-- start React -->
+
+			<li style="margin-top: 50px;" onclick="window.location.href = 'https://reactjs.org/docs/getting-started.html'"
+				class="list-group-item react d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">React Documents</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">REACT JS</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li 
+				onclick="window.location.href = 'https://v5.reactrouter.com/web/guides/quick-start'"
+				class="list-group-item react d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">React Router</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">REACT JS</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://www.taniarascia.com/react-architecture-directory-structure/'"
+				class="list-group-item react d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">React folder structure</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">REACT JS</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://mui.com/getting-started/usage/'"
+				class="list-group-item react d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">React Material Design (MUI)</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">REACT JS</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://medium.com/@subalerts/creating-protected-routes-in-react-js-89e95974a822'"
+				class="list-group-item react d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Creating Protected routes in React JS</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">REACT JS</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://jasonwatmore.com/post/2019/02/01/react-role-based-authorization-tutorial-with-example'"
+				class="list-group-item react d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">React - Role Based Authorization Tutorial</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">REACT JS</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://medium.com/nerd-for-tech/debounce-your-search-react-input-optimization-fd270a8042b'"
+				class="list-group-item react d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Tạo custom hook cho chức năng search React js sử dụng useMemo</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">REACT JS</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://nodeployfriday.com/posts/react-debounce/'"
+				class="list-group-item react d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Ví dụ sử dụng search input trong React js</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">REACT JS</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://redux.js.org/introduction/getting-started'"
+				class="list-group-item react d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Redux</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">REACT JS</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://redux-toolkit.js.org/introduction/getting-started'"
+				class="list-group-item react d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Redux Toolkit</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">REACT JS</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			
+
+			<li onclick="window.location.href = 'https://eslint.org/docs/user-guide/getting-started'"
+				class="list-group-item react d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">ESLint</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">REACT JS</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://gitlab.com/erkhuy/eccma-2015-now'"
+				class="list-group-item react d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Tính năng nổi bật từ ES2015(ES6) đến nay</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">REACT JS</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			
+
+			
+
+			<!-- end React -->
+
+			<!-- start PHP -->
+
+			<li style="margin-top: 50px;" onclick="window.location.href = 'https://drive.google.com/file/d/125iLeAks0sWUobH9OQrHS_QTSDXn62qa/view'"
+				class="list-group-item php d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Code sạch, an toàn và dễ bảo trì trong php</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">PHP</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://drive.google.com/file/d/1biFNqi4-1a54RHODOae85Mimyh6GTyc8/view'"
+				class="list-group-item php d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Coding Conventions và các chuẩn viết code trong PHP</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">PHP</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://github.com/jupeter/clean-code-php'"
+				class="list-group-item php d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">jupeter/clean-code-php</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">PHP</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<!-- end PHP -->
+
+			<!-- start Laravel -->
+
+			<li style="margin-top: 50px;" onclick="window.location.href = 'https://dev.to/jsf00/implement-crud-with-laravel-service-repository-pattern-1dkl'"
+				class="list-group-item laravel d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Mô hình 5 lớp Laravel</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">LARAVEL</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://gitlab.com/erkhuy/tech-laravel-react/-/blob/main/REPOSITOY_LARAVRL_EXP.md'"
+				class="list-group-item laravel d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">File BaseRepository</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">LARAVEL</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://www.itsolutionstuff.com/post/laravel-8-user-roles-and-permissions-tutorialexample.html'"
+				class="list-group-item laravel d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Laravel roles & permissions sử dụng spatie/laravel-permission</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">LARAVEL</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li 
+				onclick="window.location.href = 'https://github.com/alexeymezenin/laravel-best-practices'"
+				class="list-group-item laravel d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">alexeymezenin/laravel-best-practices</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">LARAVEL</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://www.guru99.com/test-driven-development.html'"
+				class="list-group-item laravel d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">What is Test Driven Development (TDD)?</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">LARAVEL</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://viblo.asia/p/feature-test-trong-laravel-GrLZD8wwZk0'"
+				class="list-group-item laravel d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Feature Test trong Laravel</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">LARAVEL</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://github.com/sanghvdeha/laravel_test/blob/master/ConventionTest.md'"
+				class="list-group-item laravel d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Convention Test</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">LARAVEL</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://www.youtube.com/watch?v=WNkNZbKsrH0'"
+				class="list-group-item laravel d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0"> Unit and Feature test cơ bản trong Laravel (Video youtube Tiếng Anh)</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">LARAVEL</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			
+
+			
+
+			
+
+			
+
+			<!-- end Laravel -->
+
+			<!-- start API -->
+			<li style="margin-top: 50px;"
+				onclick="window.location.href = 'https://drive.google.com/file/d/1PXYfwX1N45FAfHKKjXT4J2lMfUJOD9Qz/view'"
+				class="list-group-item api d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Giới thiệu về RESTFUL API</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">RESTFUL API</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://topdev.vn/blog/dinh-dang-du-lieu-trong-kiem-thu-api/'"
+				class="list-group-item api d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Định dạng dữ liệu trong kiểm thử API</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">RESTFUL API</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://drive.google.com/file/d/1nrUDsYxOqReelCYQY9EH4ZlIgznm8IX8/view'"
+				class="list-group-item api d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">RESTFUL API và Postman</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">RESTFUL API</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Status'"
+				class="list-group-item api d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">HTTP response status codes</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">RESTFUL API</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li onclick="window.location.href = 'https://drive.google.com/file/d/1gujDdczlIq0HLeO8uogCmWlkPONk1o_x/view'"
+				class="list-group-item api d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Thiết kế RESTful API như thế nào?</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">RESTFUL API</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<li style="margin-bottom: 100px;"
+				onclick="window.location.href = 'https://www.youtube.com/watch?v=MT-GJQIY3EU'"
+				class="list-group-item api d-flex justify-content-between align-content-center">
+				<div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png"
+						width="40" />
+					<div class="ml-2">
+						<h6 class="mb-0">Laravel 8 REST API With Sanctum Authentication (Video youtube Tiếng Anh)</h6>
+						<div class="about"> <strong>Danh mục:</strong> <strong class="cat">RESTFUL API</strong> </div>
+					</div>
+				</div>
+
+			</li>
+
+			<!-- end API -->
+
+
+
+
+
+
+
+
+		</ul>
+	</div>
+
+
+
+
+	<script type="text/javascript">
+
+	</script>
+</body>
+
+</html>
