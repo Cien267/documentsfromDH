@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Lesson: Các câu lệnh trong Docker</title>
+    <meta name="csrf-token" content="fcWzy3lbHLt8Qrukm67dFF28rKHVmyguhlXQlhva">
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+          name='viewport'/>
+
+          
+    
+<style>
+    .badge:empty {
+        display: table-cell !important;
+    }
+    .main-panel>.content{
+        margin-top: 50px !important;
+        padding: 30px 30px !important;
+    }
+    a.navbar-brand {
+        color: #555 !important;
+    }
+    .link-hover-color:hover{
+        background-color:#fff !important;
+    }
+    .disabled-button-wrap{
+        cursor: not-allowed;
+    }
+    .button-wrap-comment{
+        padding: 0 1.875rem !important;
+    }
+    .disabled-button{
+        opacity: 0.8;
+        pointer-events: none;
+    }
+</style>
+
+    <style>
+        .card-check-done-lesson {
+            background-image: url(https://lms.deha-soft.com/images/certificate_modal_background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-y: -550px;
+        }
+        iframe{
+                width: -webkit-fill-available !important;
+        }
+    </style>
+
+    <style>
+        .tab-content > .tab-pane:not(.active) {
+            display: block;
+            height: 0;
+            overflow-y: hidden;
+        }
+
+        .dropdown-menu--notification{
+            width: 24rem;
+        }
+        .footer {
+            width: 100%;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+<style>
+    .image-deha-academy {
+        margin-bottom: 4px !important;
+        height: 25px;
+        width: 25px;
+    }
+</style>
+
+     
+<style>
+    .breadcrumb {
+        background-color: unset;
+    }
+
+    .breadcrumb-item a {
+        color: #00bcd4 !important;
+    }
+
+    .breadcrumb-item a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .breadcrumb-item.active a {
+        color: black !important;
+    }
+
+    .breadcrumb-item.active a:hover {
+        text-decoration: unset;
+        font-weight: unset;
+    }
+</style>
+
+<div class="container d-flex justify-content-center" style="width: 50%;
+margin: 0 auto;">
+    <h1>DOCKER</h1>
+</div>
+<div class="container d-flex justify-content-center" style="margin-top: 100px;">
+
+<p><span style="font-size:24px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>I. C&aacute;c c&acirc;u lệnh trong Docker</strong></span></span></p>
+
+<table border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="font-size:18px">Lệnh</span></strong></span></td>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="font-size:18px">&Yacute; nghĩa</span></strong></span></td>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="font-size:18px">V&iacute; dụ</span></strong></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker login</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">&nbsp;Đăng nhập với docker hub</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker login</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker logout</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Đăng xuất t&agrave;i khoản hiện tại</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker logout</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:24px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>II.C&aacute;c c&acirc;u lệnh hay d&ugrave;ng&nbsp; Docker image</strong></span></span></p>
+
+<table border="1" cellpadding="1" cellspacing="1" class="docutils">
+	<thead>
+		<tr>
+			<th><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">STT</span></span></th>
+			<th><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Lệnh</span></span></th>
+			<th><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">&Yacute; nghĩa</span></span></th>
+			<th><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">V&iacute; dụ</span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">1</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker pull <code>ten_image</code></span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Tải image c&oacute; t&ecirc;n l&agrave; http từ docker hub</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px"><code>docker pull php:7.4-alpine</code></span></span></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">2</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker search -d <code>ten_image</code></span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">T&igrave;m kiếm c&aacute;c images</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px"><code>docker search php:7.4-alpine</code></span></span></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">3</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker images</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Liệt k&ecirc; c&aacute;c images đ&atilde; tải về, lệnh n&agrave;y kh&ocirc;ng c&oacute; đối số truyền v&agrave;o</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker images</span></span></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">4</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker rmi -f <code>ten_image</code></span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">X&oacute;a image đ&atilde; tải với t&ugrave;y chọn <code>-f</code></span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker rmi -f <code>php:7.4-alpine</code></span></span></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">5</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker images --help</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Trợ gi&uacute;p c&aacute;c c&acirc;u lệnh li&ecirc;n quan đến docker images</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker images --help</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:24px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>III.&nbsp;C&aacute;c c&acirc;u lệnh hay d&ugrave;ng Docker container</strong></span></span></p>
+
+<table border="1" cellpadding="1" cellspacing="1" class="docutils">
+	<thead>
+		<tr>
+			<th><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">STT</span></span></th>
+			<th><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Lệnh</span></span></th>
+			<th><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">&Yacute; nghĩa</span></span></th>
+			<th>&nbsp;</th>
+			<th><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">V&iacute; dụ</span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">1</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker run -d <code>ten_image</code></span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Tạo container chạy ngầm</span></span></td>
+			<td>&nbsp;</td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px"><code>docker run -d php:7.4-alpine</code></span></span></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">2</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker run -d -p 81:80 <code>ten_image</code></span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Tạo container chạy ngầm, &aacute;nh xạ port 81 của host với port 80 của container,</span></span></td>
+			<td>&nbsp;</td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px"><code>docker run -d -p 81:80 php:7.4-alpine</code></span></span></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">3</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker ps hoặc docker container ls</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Liệt k&ecirc; ra c&aacute;c container đ&atilde; tạo, lệnh n&agrave;y kh&ocirc;ng cần đối số truyền v&agrave;o</span></span></td>
+			<td>&nbsp;</td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px"><code>docker ps</code> hoặc <code>docker container ls</code></span></span></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">4</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker exec --help</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Trợ gi&uacute;p li&ecirc;n quan đến docker exec&nbsp;</span></span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial, Helvetica, sans-serif"><span style="font-size:18px">5</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker exec&nbsp;<code>ID_cua_contaier</code>&nbsp;<span style="color:#7f8c8d"><em>comand</em></span></span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Chạy comand trong v&ugrave;ng l&agrave;m việc của container&nbsp;</span></span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial, Helvetica, sans-serif"><span style="font-size:18px">6</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker exec -it <code>ID_cua_contaier</code> bash</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Thực hiện tương t&aacute;c với container sau khi được tạo, lưu &yacute;, cần sử dụng đụng ID của container mong muốn. Để tho&aacute;t chế độ tương t&aacute;c h&atilde;y ấn tổ hợp ph&iacute;m <strong>CTRL + p</strong> v&agrave; <strong>CTRL + q</strong></span></span></td>
+			<td>&nbsp;</td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px"><code>docker exec -it 3e6196a97a3f</code> bash</span></span></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial, Helvetica, sans-serif"><span style="font-size:18px">7</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker stop <code>ID_cua_contaier</code></span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Tạm dừng hoạt động của container</span></span></td>
+			<td>&nbsp;</td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px"><code>docker stop 3e6196a97a3f</code></span></span></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial, Helvetica, sans-serif"><span style="font-size:18px">8</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker rm <code>ID_cua_contaier</code></span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">X&oacute;a container</span></span></td>
+			<td>&nbsp;</td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px"><code>docker rm 3e6196a97a3f</code></span></span></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">8</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker stop $(docker ps -a -q) &amp;&amp; docker rm $(docker ps -a -q)</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">X&oacute;a tất cả c&aacute;c container, lệnh n&agrave;y kh&ocirc;ng c&oacute; đối số truyền v&agrave;o. Lưu &yacute; cần g&otilde; 2 lệnh</span></span></td>
+			<td>&nbsp;</td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px"><code>docker stop $(docker ps -a -q)</code> &amp;&amp; <code>docker rm $(docker ps -a -q)</code></span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:24px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>IV. C&aacute;c c&acirc;u lệnh thao t&aacute;c Docker compose</strong></span></span></p>
+
+<table border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="font-size:18px">STT</span></strong></span></td>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="font-size:18px">Lệnh</span></strong></span></td>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="font-size:18px">&Yacute; nghĩa</span></strong></span></td>
+			<td style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="font-size:18px">V&iacute; dụ</span></strong></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">1</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker-compose up&nbsp;</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Chạy c&aacute;c service</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker-compose up&nbsp;</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">2</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker-compose down</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Down c&aacute;c service</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker-compose down</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">3</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker-compose build</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Build c&aacute;c service</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker-compose build</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">4</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker-compose restart</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Restart lại c&aacute;c service</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker-compose restart</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">5</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker-compose exec service_name bash</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Truy cập v&ugrave;ng l&agrave;m việc</span></span></td>
+			<td><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">docker-compose exec php bash&nbsp;</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
